@@ -1,0 +1,6 @@
+[Unit]
+Description=Self-healing watchdog for the AirPlay stereo receiver
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/stereo-watchdog.sh

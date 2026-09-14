@@ -1,0 +1,16 @@
+// AirPlay stereo receiver - deployed by ubuntu-stereo-receiver/install.sh
+general = {
+  name = "@SERVICE_NAME@";
+  output_backend = "alsa";
+};
+
+alsa = {
+  output_device = "@ALSA_DEVICE@";
+  output_format = "S32";
+  output_rate = 44100;
+  disable_standby_mode = "never";
+};
+
+diagnostics = {
+  log_verbosity = 1;
+};
