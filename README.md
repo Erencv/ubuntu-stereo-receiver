@@ -29,13 +29,13 @@ Mac/iPhone --AirPlay--> shairport-sync --> ALSA (hw:USB) --> USB DAC --> amplifi
 
 ```bash
 sudo apt install -y git
-git clone https://github.com/<you>/ubuntu-stereo-receiver.git
+git clone https://github.com/Erencv/ubuntu-stereo-receiver.git
 cd ubuntu-stereo-receiver
 # optional: edit config/settings.conf (speaker name, ALSA device, USB match)
 sudo ./install.sh
 ```
 
-Requirements: Ubuntu with a USB audio device plugged in.
+Requirements: Ubuntu (systemd) with a USB audio device plugged in.
 
 ## What gets installed
 
@@ -85,3 +85,7 @@ keep the DAC away from WiFi dongles on the same USB controller.
 3. **Anything that restarts the receiver costs Mac clients a stale endpoint.**
    That's inherent to AirPlay-1; the whole design aims to make restarts rare
    (they only happen after genuine faults, then self-heal).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
